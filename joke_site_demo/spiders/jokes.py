@@ -1,4 +1,4 @@
-from scrapy import Spider, Request
+from scrapy import Spider
 from scrapy.loader import ItemLoader
 from joke_site_demo.items import JokeItem
 
