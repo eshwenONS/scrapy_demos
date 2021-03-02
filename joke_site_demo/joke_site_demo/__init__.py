@@ -1,0 +1,1 @@
+# Run with, e.g., 'scrapy crawl jokes -o data.csv'
