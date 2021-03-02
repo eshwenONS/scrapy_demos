@@ -17,5 +17,5 @@ class JokesSpider(Spider):
             #}
 
         next_page = response.xpath("//li[@class='next']/a/@href").extract_first()
-        if next_page is not None:
-            yield response.follow(url=next_page, callback=self.parse)
+        if next_page is not None and 'void(0)' not in next_page:
+            yield response.follow(next_page, callback=self.parse)
